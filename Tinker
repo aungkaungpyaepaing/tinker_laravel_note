@@ -1,0 +1,31 @@
+php artisan tinker                   //To call tinker 
+
+$post = App\Models\Model_Name::create(['column_name'=>'Data']);   //creating data
+
+$post = App\Models\Model_Name::find(id)     //Finding data
+
+$post = App\Models\Models_Name::whereId(6)->first();
+
+
+Upding data 
+
+$post = App\Models\Models_Name::find(2);          \\Find data
+
+$post->Column_Name = "Updated Data";              \\Write desired data to update
+
+$post->save()                                     \\Save Updated Data
+
+true = success
+falese = error
+
+Delete Data
+
+$post = App\Models\Models_Name::find(2);          \\Find data
+
+$post->delete();                                  \\Delete Data
+
+Delete permenent 
+
+$post = App\Models\Models_Name::onlyTrashed();          \\Find trashed Data
+
+$post->forceDelete();
