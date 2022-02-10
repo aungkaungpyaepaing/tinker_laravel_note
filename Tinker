@@ -29,3 +29,7 @@ Delete permenent
 $post = App\Models\Models_Name::onlyTrashed();          \\Find trashed Data
 
 $post->forceDelete();
+
+Checking relationship
+
+Model1->Model2
